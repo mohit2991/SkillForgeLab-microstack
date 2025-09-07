@@ -1,0 +1,25 @@
+### Test public API (to check REST Client works at all)
+GET https://jsonplaceholder.typicode.com/posts/1
+
+### Health Check
+GET http://localhost:8000/health
+
+### Example POST (Register User)
+POST http://localhost:8000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "mohit",
+  "email": "test@example.com",
+  "password": "12345678"
+}
+
+
+### Example POST (login)
+POST http://localhost:8000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "123456"
+}
